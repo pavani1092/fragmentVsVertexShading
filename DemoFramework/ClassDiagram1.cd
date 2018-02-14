@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Crawfis::Graphics::GroupNode" Collapsed="true">
+    <Position X="5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAACAEAQEAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GroupNode.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawfis::Graphics::IDrawableNode">
+    <Position X="7.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IDrawableNode.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawfis::Graphics::IMaterial" Collapsed="true">
+    <Position X="9.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>IMaterial.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawfis::Graphics::ISceneNode" Collapsed="true">
+    <Position X="5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ISceneNode.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawfis::Graphics::IVisitor" Collapsed="true">
+    <Position X="1.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IVisitor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawfis::Graphics::IRasterOps" Collapsed="true">
+    <Position X="7.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>IRasterOps.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawfis::Graphics::IShaderProgram" Collapsed="true">
+    <Position X="11.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAACAAAAAACAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>IShaderProgram.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawfis::Graphics::ITransformNode" Collapsed="true">
+    <Position X="2.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAABAABAAEAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>ITransformNode.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawfis::Graphics::IStateNode" Collapsed="true">
+    <Position X="9.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAABAABAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>IStateNode.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawfis::Graphics::IDrawable" Collapsed="true">
+    <Position X="2.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IDrawable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawfis::Graphics::DrawModeNode">
+    <Position X="11.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAEBEAAAA=</HashCode>
+      <FileName>DrawModeNode.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawfis::Graphics::RenderVisitor" Collapsed="true">
+    <Position X="0.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RenderVisitor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawfis::Graphics::PrintSceneVisitor" Collapsed="true">
+    <Position X="2.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>PrintSceneVisitor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawfis::Graphics::FrustumTransform" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAABAcAAAAAAgAAAAIAAAAAAAACAEAgAA=</HashCode>
+      <FileName>FrustumTransform.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawfis::Graphics::LookAtTransform" Collapsed="true">
+    <Position X="2.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAgAAEAAAAAAAAAAAAAAAAAAAAoAGAAAA=</HashCode>
+      <FileName>LookAtTransform.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawfis::Graphics::PerspectiveTransform" Collapsed="true">
+    <Position X="5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACABAAAABAAAAQcQAAAAAAAAAAAAAAEAAAAAgEAAAA=</HashCode>
+      <FileName>PerspectiveTransform.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawfis::Graphics::ShaderProgram" Collapsed="true">
+    <Position X="11.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABCAEAAAIAAAACAIAAACCAAEBgAAAAAAABEhQAAAAAA=</HashCode>
+      <FileName>ShaderProgram.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawfis::Graphics::SolidColorMaterial" Collapsed="true">
+    <Position X="9.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABACAAAAAAAAACAAgAgAAAAAQA=</HashCode>
+      <FileName>SolidColorMaterial.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawfis::Graphics::DepthTestedRasterOps" Collapsed="true">
+    <Position X="7.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>DepthTestedRasterOps.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawfis::Graphics::MaterialProxy">
+    <Position X="9.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAABAAAAAAAAABAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>MaterialProxy.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawfis::Graphics::DrawableCube" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>DrawableCube.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawfis::Graphics::DrawableSphere" Collapsed="true">
+    <Position X="2.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAQAQAAAIgAAAAAEAAAABAQAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>DrawableSphere.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawfis::Graphics::DrawableProxy">
+    <Position X="7.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAgAEAAAAAAAAAAAEAAAACAAAAAAAAAA=</HashCode>
+      <FileName>DrawableProxy.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Crawfis::Graphics::DrawableFloor" Collapsed="true">
+    <Position X="5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAgAAAAABAAAABAgQAAAAAAAAIAoAAAA=</HashCode>
+      <FileName>DrawableFloor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

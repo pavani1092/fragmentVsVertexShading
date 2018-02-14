@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material_library>
+  <material name="Shiny White" type="ShadedMaterial">
+    <FragmentShader filename="../Media/Shaders/LightingPerFragment.frag"></FragmentShader>
+    <VertexShader filename="../Media/Shaders/NormalPosition.vert"></VertexShader>
+    <ambient>
+      <color r="0.1" g="0.1" b="0.1" a="1.0"></color>
+    </ambient>
+    <diffuse>
+      <color r="1" g="1" b="1" a="1.0"></color>
+    </diffuse>
+    <specular shininess="99">
+      <color r="1" g="1" b="1" a="1.0"></color>
+    </specular>
+  </material>
+  
+  <material name="Brass" type="ShadedMaterial">
+    <FragmentShader filename="../Media/Shaders/SolidColor.frag"></FragmentShader>
+    <VertexShader filename="../Media/Shaders/VertexLight.vert"></VertexShader>
+    <ambient>
+      <color r="0.329412" g="0.223529" b="0.027451" a="1.0"></color>
+    </ambient>
+    <diffuse>
+      <color r="0.780392" g="0.568627" b="0.113725" a="1.0"></color>
+    </diffuse>
+    <specular shininess="27.8974">
+      <color r="0.992157" g="0.941176" b="0.807843" a="1.0"></color>
+    </specular>
+  </material>
+  
+  <material name="Gold" type="ShadedMaterial">
+    <FragmentShader filename="../Media/Shaders/SolidColor.frag"></FragmentShader>
+    <VertexShader filename="../Media/Shaders/VertexLight.vert"></VertexShader>
+    <ambient>
+      <color r="0.24725" g="0.1995" b="0.0745" a="1.0"></color>
+    </ambient>
+    <diffuse>
+      <color r="0.75164" g="0.60648" b="0.22648" a="1.0"></color>
+    </diffuse>
+    <specular shininess="51.2">
+      <color r="0.628281" g="0.555802" b="0.366065" a="1.0"></color>
+    </specular>
+  </material>
+  
+  <material name="Polished Gold" type="ShadedMaterial">
+    <FragmentShader filename="../Media/Shaders/SolidColor.frag"></FragmentShader>
+    <VertexShader filename="../Media/Shaders/VertexLight.vert"></VertexShader>
+    <ambient>
+      <color r="0.24725" g="0.2245" b="0.0645" a="1.0"></color>
+    </ambient>
+    <diffuse>
+      <color r="0.34615" g="0.3143" b="0.0903" a="1.0"></color>
+    </diffuse>
+    <specular shininess="83.2">
+      <color r="0.797357" g="0.723991" b="0.208006" a="1.0"></color>
+    </specular>
+  </material>
+  
+  <material name="Silver" type="ShadedMaterial">
+    <FragmentShader filename="../Media/Shaders/SolidColor.frag"></FragmentShader>
+    <VertexShader filename="../Media/Shaders/VertexLight.vert"></VertexShader>
+    <ambient>
+      <color r="0.19225" g="0.19225" b="0.19225" a="1.0"></color>
+    </ambient>
+    <diffuse>
+      <color r="0.50754" g="0.50754" b="0.50754" a="1.0"></color>
+    </diffuse>
+    <specular shininess="51.2">
+      <color r="0.508273" g="0.508273" b="0.508273" a="1.0"></color>
+    </specular>
+  </material>
+  
+  <material name="Emerald" type="ShadedMaterial">
+    <FragmentShader filename="../Media/Shaders/Lightening.frag"></FragmentShader>
+    <VertexShader filename="../Media/Shaders/Lightening.vert"></VertexShader>
+    <ambient>
+      <color r="0.0215" g="0.1745" b="0.0215" a="0.55"></color>
+    </ambient>
+    <diffuse>
+      <color r="0.07568" g="0.61424" b="0.07568" a="0.55"></color>
+    </diffuse>
+    <specular shininess="76.8">
+      <color r="0.633" g="0.727811" b="0.633" a="0.55"></color>
+    </specular>
+  </material>
+
+  <material name="SimpleMaterial" type="ShadedMaterial">
+    <FragmentShader filename="../Media/Shaders/design.frag"></FragmentShader>
+    <VertexShader filename="../Media/Shaders/SimpleVertex.vert"></VertexShader>
+    <ambient>
+      <color r="0.19225" g="0.19225" b="0.19225" a="1.0"></color>
+    </ambient>
+    <diffuse>
+      <color r="0.50754" g="0.50754" b="0.50754" a="1.0"></color>
+    </diffuse>
+    <specular shininess="51.2">
+      <color r="0.508273" g="0.508273" b="0.508273" a="1.0"></color>
+    </specular>
+  </material>
+
+  <material name="Black Plastic" type="ShadedMaterial">
+    <FragmentShader filename="../Media/Shaders/SolidColor.frag"></FragmentShader>
+    <VertexShader filename="../Media/Shaders/VertexLight.vert"></VertexShader>
+    <ambient>
+      <color r="0.0" g="0.0" b="0.0" a="1.0"></color>
+    </ambient>
+    <diffuse>
+      <color r="0.01" g="0.01" b="0.01" a="1.0"></color>
+    </diffuse>
+    <specular shininess="32">
+      <color r="0.5" g="0.5" b="0.5" a="1.0"></color>
+    </specular>
+  </material>
+
+  <material name="White" type="SolidColor">
+    <color r="1.0" g="1.0" b="1.0" a="1.0"></color>
+  </material>
+
+  <material name="Red" type="SolidColor">
+    <color r="1.0" g="0.0" b="0.0" a="1.0"></color>
+  </material>
+
+  <material name="Green" type="SolidColor">
+    <color r="0.0" g="1.0" b="0.0" a="1.0"></color>
+  </material>
+
+  <material name="Blue" type="SolidColor">
+    <color r="0.0" g="0.0" b="1.0" a="1.0"></color>
+  </material>
+
+  <material name="White Shaded" type="SimpleShader">
+    <color r="1.0" g="1.0" b="1.0" a="1.0"></color>
+    <FragmentShader filename="../Media/Shaders/SolidColor.frag"></FragmentShader>
+    <VertexShader filename="../Media/Shaders/VertexLight.vert"></VertexShader>
+  </material>
+
+  <material name="Grey" type="SimpleShader">
+    <color r="0.2" g="0.2" b="0.2" a="1.0"></color>
+    <FragmentShader filename="../Media/Shaders/HemisphereLight.frag"></FragmentShader>
+    <VertexShader filename="../Media/Shaders/HemisphereLight.vert"></VertexShader>
+  </material>
+
+  <material name="GreySilhoutte" type="SimpleShader">
+    <color r="0.2" g="0.2" b="0.2" a="1.0"></color>
+    <FragmentShader filename="../Media/Shaders/Silhoutte.frag"></FragmentShader>
+    <VertexShader filename="../Media/Shaders/Silhoutte.vert"></VertexShader>
+  </material>
+</material_library>

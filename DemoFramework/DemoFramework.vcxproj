@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{727AD9B1-19E0-4925-BEA2-D8528CFA3F2E}</ProjectGuid>
+    <RootNamespace>DemoFramework</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.26730.12</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\openGL\DevIL-Windows-SDK-1.8.0\DevIL Windows SDK\include;C:\openGL\glew\include;C:\openGL\freeglut-MSVC-3.0.0-2.mp\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;TIXML_USE_TICPP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>glew32.lib;opengl32.lib;DevIL.lib;freeglut.lib;ILU.lib;ILUT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\openGL\DevIL-Windows-SDK-1.8.0\DevIL Windows SDK\lib\x86\Release;C:\openGL\freeglut-MSVC-3.0.0-2.mp\freeglut\lib;C:\openGL\glew\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Color.cpp" />
+    <ClCompile Include="DemoFramework.cpp" />
+    <ClCompile Include="LightManager.cpp" />
+    <ClCompile Include="MaterialFactory.cpp" />
+    <ClCompile Include="MaterialManager.cpp" />
+    <ClCompile Include="MathFactory.cpp" />
+    <ClCompile Include="MatrixManager.cpp" />
+    <ClCompile Include="ModelManager.cpp" />
+    <ClCompile Include="NullCommand.cpp" />
+    <ClCompile Include="RenderManager.cpp" />
+    <ClCompile Include="RenderState.cpp" />
+    <ClCompile Include="SceneNodeFactory.cpp" />
+    <ClCompile Include="TexParam2DNoMipMap.cpp" />
+    <ClCompile Include="TexParamMipMap.cpp" />
+    <ClCompile Include="TextureBindManager.cpp" />
+    <ClCompile Include="ticpp.cpp" />
+    <ClCompile Include="tinystr.cpp" />
+    <ClCompile Include="tinyxml.cpp" />
+    <ClCompile Include="tinyxmlerror.cpp" />
+    <ClCompile Include="tinyxmlparser.cpp" />
+    <ClCompile Include="TransformFactory.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BlankTexture2D.h" />
+    <ClInclude Include="ClearColorCommand.h" />
+    <ClInclude Include="ClearDepthCommand.h" />
+    <ClInclude Include="ClearFrameCommand.h" />
+    <ClInclude Include="Color.h" />
+    <ClInclude Include="DebugRenderVisitor.h" />
+    <ClInclude Include="DefaultController.h" />
+    <ClInclude Include="DepthBuffer.h" />
+    <ClInclude Include="DepthTestedRasterOps.h" />
+    <ClInclude Include="DevIL.h" />
+    <ClInclude Include="DirectionalLight.h" />
+    <ClInclude Include="DrawableCube.h" />
+    <ClInclude Include="DrawableCubeVertex.h" />
+    <ClInclude Include="DrawableFloor.h" />
+    <ClInclude Include="DrawableProxy.h" />
+    <ClInclude Include="DrawableRenderState.h" />
+    <ClInclude Include="DrawableSphere.h" />
+    <ClInclude Include="DrawableSphereVertex.h" />
+    <ClInclude Include="DrawableSquare.h" />
+    <ClInclude Include="DrawableTeapot.h" />
+    <ClInclude Include="DrawModeController.h" />
+    <ClInclude Include="DrawModeNode.h" />
+    <ClInclude Include="ExaminerCameraNode.h" />
+    <ClInclude Include="FileUtility.h" />
+    <ClInclude Include="FragmentRoutine.h" />
+    <ClInclude Include="FrustumTransform.h" />
+    <ClInclude Include="GeometryRoutine.h" />
+    <ClInclude Include="GroupNode.h" />
+    <ClInclude Include="ICommand.h" />
+    <ClInclude Include="IDepthBuffer.h" />
+    <ClInclude Include="IDrawable.h" />
+    <ClInclude Include="IDrawableNode.h" />
+    <ClInclude Include="IKeyboardHandler.h" />
+    <ClInclude Include="ILight.h" />
+    <ClInclude Include="IMaterial.h" />
+    <ClInclude Include="IMouseHandler.h" />
+    <ClInclude Include="IRasterOps.h" />
+    <ClInclude Include="IRenderTarget.h" />
+    <ClInclude Include="ISceneNode.h" />
+    <ClInclude Include="IShaderConstant.h" />
+    <ClInclude Include="IShaderProgram.h" />
+    <ClInclude Include="IShaderRoutine.h" />
+    <ClInclude Include="IStateNode.h" />
+    <ClInclude Include="ITextureApplicator.h" />
+    <ClInclude Include="ITextureBindManager.h" />
+    <ClInclude Include="ITextureDataObject.h" />
+    <ClInclude Include="ITextureParameters.h" />
+    <ClInclude Include="ITransformNode.h" />
+    <ClInclude Include="IVisitor.h" />
+    <ClInclude Include="LightManager.h" />
+    <ClInclude Include="LightSetNode.h" />
+    <ClInclude Include="LookAtTransform.h" />
+    <ClInclude Include="MaterialFactory.h" />
+    <ClInclude Include="MaterialManager.h" />
+    <ClInclude Include="MaterialProxy.h" />
+    <ClInclude Include="MathFactory.h" />
+    <ClInclude Include="MathUtil.h" />
+    <ClInclude Include="Matrix.h" />
+    <ClInclude Include="MatrixManager.h" />
+    <ClInclude Include="ModelManager.h" />
+    <ClInclude Include="NoDepthRasterOps.h" />
+    <ClInclude Include="OpenGL.h" />
+    <ClInclude Include="PerspectiveTransform.h" />
+    <ClInclude Include="PointLight.h" />
+    <ClInclude Include="PrintSceneVisitor.h" />
+    <ClInclude Include="RenderBoundingBoxVisitor.h" />
+    <ClInclude Include="RenderManager.h" />
+    <ClInclude Include="RenderState.h" />
+    <ClInclude Include="RenderTarget.h" />
+    <ClInclude Include="RenderTargetProxy.h" />
+    <ClInclude Include="RenderVisitor.h" />
+    <ClInclude Include="ResetModelViewNode.h" />
+    <ClInclude Include="ResetProjectionNode.h" />
+    <ClInclude Include="SamplerApplicator.h" />
+    <ClInclude Include="SceneNodeFactory.h" />
+    <ClInclude Include="SearchVisitor.h" />
+    <ClInclude Include="ShadedMaterial.h" />
+    <ClInclude Include="ShaderConstantCollection.h" />
+    <ClInclude Include="ShaderConstantFloat.h" />
+    <ClInclude Include="ShaderConstantInt.h" />
+    <ClInclude Include="ShaderConstantMat4.h" />
+    <ClInclude Include="ShaderConstantVec4.h" />
+    <ClInclude Include="ShaderProgram.h" />
+    <ClInclude Include="SimpleShaderMaterial.h" />
+    <ClInclude Include="SolidColorMaterial.h" />
+    <ClInclude Include="StateNodeBase.h" />
+    <ClInclude Include="SwapCommand.h" />
+    <ClInclude Include="TexParam2DMipMap.h" />
+    <ClInclude Include="TexParam2DNoMipMap.h" />
+    <ClInclude Include="TexParam2DWrapped.h" />
+    <ClInclude Include="TextureBinding.h" />
+    <ClInclude Include="TextureBindManagerOpenGL.h" />
+    <ClInclude Include="TextureData2DBase.h" />
+    <ClInclude Include="TextureData2DBuilder.h" />
+    <ClInclude Include="TextureDataImage.h" />
+    <ClInclude Include="TextureParameterList.h" />
+    <ClInclude Include="ticpp.h" />
+    <ClInclude Include="ticpprc.h" />
+    <ClInclude Include="TiCppRCImp.h" />
+    <ClInclude Include="tinystr.h" />
+    <ClInclude Include="tinyxml.h" />
+    <ClInclude Include="Trackball.h" />
+    <ClInclude Include="TransformFactory.h" />
+    <ClInclude Include="TransformMatrixNode.h" />
+    <ClInclude Include="TransformNodeBase.h" />
+    <ClInclude Include="Vector.h" />
+    <ClInclude Include="VertexRoutine.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Media\Shaders\design.frag" />
+    <None Include="..\Media\Shaders\DirectionalLight.vert" />
+    <None Include="..\Media\Shaders\HemisphereLight.frag" />
+    <None Include="..\Media\Shaders\HemisphereLight.vert" />
+    <None Include="..\Media\Shaders\HemisphereLighting.vert" />
+    <None Include="..\Media\Shaders\InterpolatedColor.frag" />
+    <None Include="..\Media\Shaders\Lightening.frag" />
+    <None Include="..\Media\Shaders\Lightening.vert" />
+    <None Include="..\Media\Shaders\LightingPerFragment.frag" />
+    <None Include="..\Media\Shaders\NormalGeometry.geom" />
+    <None Include="..\Media\Shaders\NormalPosition.vert" />
+    <None Include="..\Media\Shaders\PointLight.vert" />
+    <None Include="..\Media\Shaders\Silhoutte.frag" />
+    <None Include="..\Media\Shaders\Silhoutte.vert" />
+    <None Include="..\Media\Shaders\SimpleVertex.vert" />
+    <None Include="..\Media\Shaders\SolidColor.frag" />
+    <None Include="..\Media\Shaders\SolidColor.vert" />
+    <None Include="..\Media\Shaders\VertexLight.vert" />
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\Media\2DPaint.xml" />
+    <Xml Include="..\Media\BasicMaterials.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="..\Media\Stairs.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="..\Media\TeaPotTrophy.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="..\Media\TestScene.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

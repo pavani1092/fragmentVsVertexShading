@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scene>
+  <StateNode name="Lights">
+    <LightSet>
+      <PointLight>
+        <Position x="-4" y="1" z="0"></Position>
+        <Color r="1" g="1" b="1" a="1"></Color>
+      </PointLight>
+      <DirectionalLight>
+        <Direction x="1" y="10" z="3"></Direction>
+        <Color r="1" g="1" b="1" a="1"></Color>
+      </DirectionalLight>
+      <DirectionalLight>
+        <Direction x="1" y="10" z="-3"></Direction>
+        <Color r="1" g="1" b="1" a="1"></Color>
+      </DirectionalLight>
+      <Child>
+        <GroupNode name="Main Scene">
+
+          <StateNode name="White Material">
+            <MaterialProxy material="White Shaded">
+              <Child>
+                <DrawNode name="myName">
+                  <DrawableRenderState name="Pavani Komati"></DrawableRenderState>
+                </DrawNode>
+              </Child>
+            </MaterialProxy>
+          </StateNode>
+
+          <StateNode name="Gold Material">
+            <MaterialProxy material="Grey">
+              <Child>
+                <TransformNode name ="Sphere Transform">
+                  <TransformMatrixNode>
+                    <Scale x="0.5" y="0.5" z="0.5"></Scale>
+                    <Translate x="-2" y="1.8" z="2"></Translate>
+                    <Child>
+                      <DrawNode name="Hemisphere" >
+                        <DrawableProxy model="Sphere10000"></DrawableProxy>
+                      </DrawNode>
+                    </Child>
+                  </TransformMatrixNode>
+                </TransformNode>
+              </Child>
+            </MaterialProxy>
+          </StateNode>
+          
+          <StateNode name="White Material">
+            <MaterialProxy material="Emerald">
+              <Child>
+                <TransformNode name ="Cube Transform">
+                  <TransformMatrixNode>
+                    <Scale x="2" y="0.4" z="0.8"></Scale>
+                    <Translate x="-2" y="1" z="2"></Translate>
+                    <Child>
+                      <DrawNode name="Cube1">
+                        <DrawableProxy model="Cube"></DrawableProxy>
+                      </DrawNode>
+                    </Child>
+                  </TransformMatrixNode>
+                </TransformNode>
+              </Child>
+            </MaterialProxy>
+          </StateNode>
+
+          <StateNode name="Gold Material">
+            <MaterialProxy material="GreySilhoutte">
+              <Child>
+                <TransformNode name ="Sphere Transform">
+                  <TransformMatrixNode>
+                    <Scale x="0.5" y="0.5" z="0.5"></Scale>
+                    <Translate x="-0.5" y="0.8" z="0.6"></Translate>
+                    <Child>
+                      <DrawNode name="Silhoutte" >
+                        <DrawableProxy model="Sphere10000"></DrawableProxy>
+                      </DrawNode>
+                    </Child>
+                  </TransformMatrixNode>
+                </TransformNode>
+              </Child>
+            </MaterialProxy>
+          </StateNode>
+            
+          <StateNode name="White Material">
+            <MaterialProxy material="Emerald">
+              <Child>
+                <TransformNode name ="Cube Transform">
+                  <TransformMatrixNode>
+                    <Scale x="2" y="0.4" z="0.8"></Scale>
+                    <Translate x="-2" y="0" z="1"></Translate>
+                    <Child>
+                      <DrawNode name="Cube1">
+                        <DrawableProxy model="Cube"></DrawableProxy>
+                      </DrawNode>
+                    </Child>
+                  </TransformMatrixNode>
+                </TransformNode>
+              </Child>
+            </MaterialProxy>
+          </StateNode>
+          
+          <StateNode name="White Material">
+            <MaterialProxy material="Emerald">
+              <Child>
+                <TransformNode name ="Cube Transform">
+                  <TransformMatrixNode>
+                    <Scale x="2" y="0.4" z="0.8"></Scale>
+                    <Translate x="-2" y="-1" z="0"></Translate>
+                    <Child>
+                      <DrawNode name="Cube1">
+                        <DrawableProxy model="Cube"></DrawableProxy>
+                      </DrawNode>
+                    </Child>
+                  </TransformMatrixNode>
+                </TransformNode>
+              </Child>
+            </MaterialProxy>
+          </StateNode>
+          <StateNode name="White Material">
+            <MaterialProxy material="Emerald">
+              <Child>
+                <TransformNode name ="Cube Transform">
+                  <TransformMatrixNode>
+                    <Scale x="2" y="0.4" z="0.8"></Scale>
+                    <Translate x="-2" y="-2" z="-1"></Translate>
+                    <Child>
+                      <DrawNode name="Cube1">
+                        <DrawableProxy model="Cube"></DrawableProxy>
+                      </DrawNode>
+                    </Child>
+                  </TransformMatrixNode>
+                </TransformNode>
+              </Child>
+            </MaterialProxy>
+          </StateNode>
+          <StateNode name="White Material">
+            <MaterialProxy material="Emerald">
+              <Child>
+                <TransformNode name ="Cube Transform">
+                  <TransformMatrixNode>
+                    <Scale x="2" y="0.4" z="0.8"></Scale>
+                    <Translate x="-2" y="-3" z="-2"></Translate>
+                    <Child>
+                      <DrawNode name="Cube1">
+                        <DrawableProxy model="Cube"></DrawableProxy>
+                      </DrawNode>
+                    </Child>
+                  </TransformMatrixNode>
+                </TransformNode>
+              </Child>
+            </MaterialProxy>
+          </StateNode>
+          <StateNode name="Emerald Material">
+            <MaterialProxy material="SimpleMaterial">
+              <Child>
+                <TransformNode name ="Floor Transform">
+                  <TransformMatrixNode>
+                    <Scale x="20" y="1" z="40"></Scale>
+                    <Translate  x="-2" y="-4" z="-3"></Translate>
+                    <Child>
+                      <DrawNode name="Base Floor">
+                        <DrawableProxy model="Floor"></DrawableProxy>
+                      </DrawNode>
+                    </Child>
+                  </TransformMatrixNode>
+                </TransformNode>
+              </Child>
+            </MaterialProxy>
+          </StateNode>
+          
+        </GroupNode>
+      </Child>
+    </LightSet>
+  </StateNode>
+</scene>
